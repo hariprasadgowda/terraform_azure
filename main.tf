@@ -46,7 +46,7 @@ resource "azurerm_app_service" "this" {
   site_config {
     websockets_enabled = true
   }
-
+/* now variables are added in variables.tf */
   app_settings = {
     "APPINSIGHTS_INSTRUMENTATIONKEY"      = "${azurerm_application_insights.this.instrumentation_key}"
     "APPINSIGHTS_PORTALINFO"              = "ASP.NET"
